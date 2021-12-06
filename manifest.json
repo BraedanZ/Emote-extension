@@ -1,5 +1,13 @@
 {
     "name": "emote-tracker",
-    "version": "1.0",
-    "manifest_version": 2
+    "description": "Build an extension to track emote use on twitch and youtube live streams.",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html"
+    }
 }
