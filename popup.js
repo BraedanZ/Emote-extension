@@ -9,13 +9,13 @@ countWord.addEventListener("click", async() => {
 
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
-    function: countWordOnPage,
+    // function: countWordOnPage,
     files: ['content.js']
   });
 });
 
-function countWordOnPage() {
-  chrome.sorage.sync.get("word", ({ word }) => {
+// function countWordOnPage() {
+//   chrome.sorage.sync.get("word", ({ word }) => {
 
-  })
-}
+//   })
+// }
